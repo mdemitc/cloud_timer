@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--- Basic Page Needs
+   ================================================== -->
+	<meta charset="utf-8">
+	<title>SoftServe Timer</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+   ================================================== -->
+   	<!--Bootstrap-->
+   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	
+	<link rel="stylesheet" href="./css/global.css" />
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/scriptTimer.js"></script>
+
+    <!-- Favicons
+	================================================== 
+	<link rel="shortcut icon" href="favicon.ico" >-->
+
+	<!-- Cross  brows
+	================================================== -->
+	
+</head>
+
+<body>
+<div id="wrapper">
+	<div class="getTable">
+		<div class="header">
+			<div class="col-md-4">
+				<input type="text" class="form-control" id="enterName" placeholder="Enter your name">
+			</div>
+			<div>
+				<button class="btn btn-default" id="addTr">Додати</button>
+			</div>
+		</div>
+		<table class="table table-hover" id="table">
+			<tr>
+				<th>Name</th>
+				<th>Time</th>
+				<th>Goal</th>
+				<th>Progress</th>
+				<th>Action</th>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td class="timer">00:00:00</td>
+				<td>---</td>
+				<td> </td>
+				<td>
+					<input type="button" value="start" class='start btn btn-default' onclick="myTimer.click(event, this)">
+					<input type="button" value="X" class='btn btn-default' onclick="myTimer.deleteTableRow(this)">
+				</td>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td class="timer">00:00:00</td>
+				<td>---</td>
+				<td> </td>
+				<td>
+					<input type="button" value="start" class='start btn btn-default' onclick="myTimer.click(event, this)">
+					<input type="button" value="X" class='btn btn-default' onclick="myTimer.deleteTableRow(this)">
+				</td>
+			</tr>
+			<tr>
+				<th>Total</th>
+				<th>Time</th>
+				<th></th>
+				<th></th>
+				<th>Action</th>
+			</tr>
+		</table>
+	</div>
+</div><!-- End Wrapper-->
+    
+   	<!-- Footer===================-->
+<div id="footerWrap">
+	<footer class="footer row">
+		
+	</footer>
+</div><!-- End Footer-->
+
+
+</body>
+</html>
